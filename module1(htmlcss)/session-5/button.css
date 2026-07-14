@@ -1,0 +1,8 @@
+button{
+    background-color:crimson;
+    border-radius: 8px;
+    color: white;
+}
+button:hover{
+    background-color:darkred;
+}

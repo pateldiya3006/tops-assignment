@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+</head>
+<body>
+    <form>
+        <table align="center">
+            <h2 align="center">Zomato Food order Form</h2>
+            <tr>
+                <td>
+                    Username
+                </td>
+                <td><input type="text" name="Username" required></td>
+            </tr>
+            <tr>
+                <td>Food Item</td>
+               <td> <select name="food" id="food" required>
+                <option value="" selected disabled>Select Food Item</option>
+                <option value="1">Pav Bhaji</option>
+                <option value="2">Pizza</option>
+                <option value="3">Burger</option>
+               </select></td>
+
+            </tr>
+            <tr>
+                <td>
+                    Quantity
+                </td>
+                <td>
+                    <input type="number" name="Quantity">
+                </td>
+            </tr>
+            <tr>
+                <td>Delivery Instuction</td>
+                <td><textarea name="Delivery" id=""></textarea></td>
+            </tr>
+            <tr>
+                <td>Order Id</td>
+                <td><input type="text" id="orderid" name="orderid" value="ORD12345" disabled></td>
+                <!-- Order id is a disabled so the user cannot edit it. -->
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <button type="submit">Order</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewp  ort" content="width=device-width, initial-scale=1.0">
+    <title>Review Page</title>
+</head>
+<body>
+    <form method="post" >
+        <table align="center">
+            <h2 align="center">Flipcart Product Review Form </h2>
+            <tr>
+                <td>Username</td>
+                <td><input type="text" name="Username" required></td>
+                </tr>
+                <tr>
+                <td>Rating</td>
+                <td>
+                    <select name="Rating" id="Rating" required>
+                        <option value="" selected disabled>Select Rating</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>Review Message</td>
+                <td><textarea name="Review" id="Review" minlength="20" required></textarea></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                <button type="submit">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
