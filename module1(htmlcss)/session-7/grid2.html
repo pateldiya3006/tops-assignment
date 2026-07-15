@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Product Grid</title>
+
+    <style>
+        h2{
+            text-align: center;
+        }
+
+        .product-grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card{
+            border: 1px solid gray;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card img{
+            width: 150px;
+            height: 150px;
+        }
+
+        /* Tablet */
+        @media screen and (max-width:768px){
+            .product-grid{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+
+        /* Mobile */
+        @media screen and (max-width:480px){
+            .product-grid{
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Flipkart Product Grid</h2>
+
+    <section class="product-grid">
+
+        <div class="card">
+            <img src="iphn.jpg.jpg" alt="iPhone">
+            <h3>iPhone 15</h3>
+        </div>
+
+        <div class="card">
+            <img src="laptop.jpg" alt="Laptop">
+            <h3>Laptop</h3>
+        </div>
+
+        <div class="card">
+            <img src="headphones.jpg" alt="Headphones">
+            <h3>Headphones</h3>
+        </div>
+
+        <div class="card">
+            <img src="smartwatch.jpg" alt="Smart Watch">
+            <h3>Smart Watch</h3>
+        </div>
+
+        <div class="card">
+            <img src="camera.jpg" alt="Camera">
+            <h3>Camera</h3>
+        </div>
+
+        <div class="card">
+            <img src="puma.jpg" alt="Nike Shoes">
+            <h3>Nike Shoes</h3>
+        </div>
+
+    </section>
+
+</body>
+</html>
