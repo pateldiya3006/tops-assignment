@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Product Card</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, sans-serif;
+            background:#f1f3f6;
+        }
+
+        .box{
+            display:flex;
+            justify-content:center;
+            padding:20px;
+        }
+
+        .product{
+            display:flex;
+            align-items:center;
+            gap:20px;
+            width:700px;
+            background:white;
+            border:1px solid #ddd;
+            border-radius:10px;
+            padding:25px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.2);
+            font-size:18px;
+        }
+
+        .product img{
+            width:250px;
+            height:250px;
+            object-fit:cover;
+        }
+
+        .details{
+            flex:1;
+        }
+
+        .name{
+            font-size:24px;
+            font-weight:bold;
+            margin-bottom:10px;
+        }
+
+        .price{
+            color:green;
+            font-size:22px;
+            font-weight:bold;
+            margin-bottom:10px;
+        }
+
+        button{
+            background:#2874f0;
+            color:white;
+            border:none;
+            padding:10px 20px;
+            border-radius:5px;
+            cursor:pointer;
+            font-size:16px;
+        }
+
+        /* 1200px */
+        @media only screen and (max-width:1200px){
+
+            .product{
+                padding:20px;
+                font-size:17px;
+            }
+
+            .name{
+                font-size:22px;
+            }
+
+            .price{
+                font-size:20px;
+            }
+        }
+
+        /* 900px */
+        @media only screen and (max-width:900px){
+
+            .product{
+                padding:15px;
+                font-size:16px;
+            }
+
+            .name{
+                font-size:20px;
+            }
+
+            .price{
+                font-size:18px;
+            }
+
+            .product img{
+                width:220px;
+                height:220px;
+            }
+        }
+
+        /* 600px */
+        @media only screen and (max-width:600px){
+
+            .product{
+                flex-direction:column;
+                width:90%;
+                text-align:center;
+                padding:10px;
+                font-size:14px;
+            }
+
+            .product img{
+                width:100%;
+                height:auto;
+            }
+
+            .name{
+                font-size:18px;
+            }
+
+            .price{
+                font-size:16px;
+            }
+
+            button{
+                font-size:14px;
+                padding:8px 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <div class="product">
+
+        <img src="puma.jpg" alt="Puma">
+
+        <div class="details">
+            <div class="name">Puma Sneakers</div>
+            <div class="price">₹3,999</div>
+
+            <button>Buy Now</button>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
