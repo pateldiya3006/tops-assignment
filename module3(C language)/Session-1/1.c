@@ -1,0 +1,2 @@
+A program is a set of instructions written in a programming language that tells a computer or mobile device what to do. Programs help us perform different tasks quickly and easily. For example, **Instagram** is an app that uses many programs to allow users to upload photos and videos, like posts, send messages, and view stories. When we tap the Like button, a program processes our action and updates the number of likes on the post.
+
