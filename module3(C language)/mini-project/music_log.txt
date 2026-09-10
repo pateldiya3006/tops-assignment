@@ -1,0 +1,7 @@
+Day 1 = 23 minutes
+Day 2 = 23 minutes
+Day 3 = 22 minutes
+Day 4 = 2 minutes
+Day 5 = 4 minutes
+Day 6 = 5 minutes
+Day 7 = 8 minutes
