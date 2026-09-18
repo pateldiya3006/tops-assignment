@@ -1,0 +1,23 @@
+# Comparison Between Procedural C and OOP TaskList Version
+
+### 1. Code Organization
+
+**Problem in C:** In the procedural C version, data and functions are separate, which makes the code harder to organize.
+
+**Solution in OOP:** In the OOP version, classes and methods group related data and operations together, making the code more organized.
+
+### 2. Managing Multiple Tasks
+
+**Problem in C:** Managing multiple tasks using arrays and separate functions can become difficult as the program grows.
+
+**Solution in OOP:** The `TaskList` class stores multiple Task objects and provides methods like `addTask()`, `markTaskDone()`, and `showTasks()` to manage them easily.
+
+### 3. Code Reusability and Maintenance
+
+**Problem in C:** In the C version, task-related operations are handled using separate functions, which can make the code harder to maintain.
+
+**Solution in OOP:** In the OOP version, methods can be reused whenever needed, making the program easier to maintain and modify.
+
+### Conclusion
+
+The OOP TaskList version is more organized, reusable, and easier to maintain because it uses classes and methods to manage tasks.
