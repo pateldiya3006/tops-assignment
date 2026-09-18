@@ -5,18 +5,18 @@ class Task
 {
 public:
     string title;
-    bool isDone;
+    int isDone;
 
     void markDone()
     {
-        isDone = true;
+        isDone = 1;
     }
 
     void display()
     {
         cout << title << endl;
 
-        if(isDone == true)
+        if(isDone == 1)
         {
             cout << "DONE";
         }
@@ -27,12 +27,12 @@ public:
     }
 };
 
-int main()
+main()
 {
     Task t;
 
     t.title = "Study C++";
-    t.isDone = false;
+    t.isDone = 0;
 
     t.markDone();
 

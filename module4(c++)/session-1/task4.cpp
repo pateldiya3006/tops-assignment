@@ -5,7 +5,7 @@ class Task
 {
 public:
     string title;
-    bool isDone;
+    int isDone;
 };
 
 class TaskList
@@ -17,13 +17,13 @@ public:
     void addTask(string title)
     {
         tasks[count].title = title;
-        tasks[count].isDone = false;
+        tasks[count].isDone = 0;
         count++;
     }
 
     void markTaskDone(int index)
     {
-        tasks[index].isDone = true;
+        tasks[index].isDone = 1;
     }
 
     void showTasks()
@@ -32,7 +32,7 @@ public:
         {
             cout << i + 1 << ". " << tasks[i].title;
 
-            if(tasks[i].isDone == true)
+            if(tasks[i].isDone == 1)
             {
                 cout << " - DONE";
             }
@@ -46,7 +46,7 @@ public:
     }
 };
 
-int main()
+main()
 {
     TaskList list;
 
